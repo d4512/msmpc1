@@ -77,8 +77,3 @@ ol li {
   list-style-type: decimal; /* ensures numbering */
   margin-bottom: 6px;       /* spacing between items */
 }
-
-ul {
-  margin-left: 2rem;   /* controls indentation */
-  padding-left: 1rem;  /* space between numbers and text */
-}
