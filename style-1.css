@@ -67,3 +67,13 @@ nav ul{display:flex;justify-content:center;gap:25px}
 .gallery{grid-template-columns:repeat(3,1fr)}
 .hero h2{font-size:2rem}
 }
+
+ol {
+  margin-left: 2rem;   /* controls indentation */
+  padding-left: 1rem;  /* space between numbers and text */
+}
+
+ol li {
+  list-style-type: decimal; /* ensures numbering */
+  margin-bottom: 6px;       /* spacing between items */
+}
