@@ -78,7 +78,7 @@ ol li {
   margin-bottom: 6px;       /* spacing between items */
 }
 
-ol li.item-important::marker{
+li.item-important::marker{
   color: black; /* keeps number black */
 }
 li.item-important{
