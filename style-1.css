@@ -81,6 +81,6 @@ ol li {
 ol li.item-important::marker{
   color: black; /* keeps number black */
 }
-ol li.item-important{
+li.item-important{
   color: red; /* text red */
 }
