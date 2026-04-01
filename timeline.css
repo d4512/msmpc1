@@ -1,0 +1,61 @@
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+/* Vertical line */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #ccc;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Timeline items */
+.timeline-item {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+/* Left side */
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
+
+/* Right side */
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+/* Content box */
+.timeline-content {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Circles (markers) */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background: #ff5a5f;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Adjust circle for right side */
+.timeline-item:nth-child(even)::before {
+  left: -10px;
+}
